@@ -1,3 +1,10 @@
+## --- Day 1: Historian Hysteria ---
+# @Author : Art3mis
+# @Date : 07/12/2024
+# @File : day1.py
+# @Project: Advent of Code 2024
+## ---------------------------------
+
 ## ----- Accessing Input File
 
 path = "../Resources/"

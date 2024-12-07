@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60ddc2ad-80a8-40ae-822e-de52e315e08c" name="Changes" comment="day1 complete">
+    <list default="true" id="60ddc2ad-80a8-40ae-822e-de52e315e08c" name="Changes" comment="day1 complete and commented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/day1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/day1.py" afterDir="false" />
     </list>
@@ -105,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1733473166711</updated>
       <workItem from="1733473168118" duration="4410000" />
-      <workItem from="1733500795168" duration="4987000" />
+      <workItem from="1733500795168" duration="6433000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;First part working uncommented">
       <option name="closed" value="true" />
@@ -123,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733575454432</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="day1 complete and commented">
+      <option name="closed" value="true" />
+      <created>1733576641650</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733576641650</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,7 +151,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit&#10;First part working uncommented" />
     <MESSAGE value="day1 complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="day1 complete" />
+    <MESSAGE value="day1 complete and commented" />
+    <option name="LAST_COMMIT_MESSAGE" value="day1 complete and commented" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AdventOfCode2024$day1.coverage" NAME="day1 Coverage Results" MODIFIED="1733575395519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Source" />
