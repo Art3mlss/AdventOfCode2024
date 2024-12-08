@@ -3,10 +3,10 @@
 # @Date : 07/12/2024
 # @File : day1.py
 # @Project: Advent of Code 2024
+# @Link : https://adventofcode.com/2024/day/1
 ## ---------------------------------
 
 ## ----- Accessing Input File
-
 path = "../Resources/"
 day = "1"
 with open(path+"day"+day+".txt", 'r') as file:
