@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60ddc2ad-80a8-40ae-822e-de52e315e08c" name="Changes" comment="day2 complete and commented">
+    <list default="true" id="60ddc2ad-80a8-40ae-822e-de52e315e08c" name="Changes" comment="test gitignore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +60,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tom\PycharmProjects\AdventOfCode2024" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.day2">
     <configuration name="day1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode2024" />
@@ -130,7 +136,7 @@
       <option name="presentableId" value="Default" />
       <updated>1733473166711</updated>
       <workItem from="1733473168118" duration="4410000" />
-      <workItem from="1733500795168" duration="10281000" />
+      <workItem from="1733500795168" duration="10589000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;First part working uncommented">
       <option name="closed" value="true" />
@@ -172,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733669334047</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="test gitignore">
+      <option name="closed" value="true" />
+      <created>1733669653961</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733669653961</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,10 +209,11 @@
     <MESSAGE value="day1 complete and commented" />
     <MESSAGE value="day1 complete and commented bis" />
     <MESSAGE value="day2 complete and commented" />
-    <option name="LAST_COMMIT_MESSAGE" value="day2 complete and commented" />
+    <MESSAGE value="test gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="test gitignore" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AdventOfCode2024$day1.coverage" NAME="day1 Coverage Results" MODIFIED="1733606343949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Source" />
-    <SUITE FILE_PATH="coverage/AdventOfCode2024$day2.coverage" NAME="day2 Coverage Results" MODIFIED="1733669253783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Source" />
+    <SUITE FILE_PATH="coverage/AdventOfCode2024$day2.coverage" NAME="day2 Coverage Results" MODIFIED="1733669939497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Source" />
   </component>
 </project>
