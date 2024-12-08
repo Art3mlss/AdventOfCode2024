@@ -37,3 +37,23 @@ print(mulSum)
 ## ----- Part #2
 # Same as before, but only consider the correct multiplication if they are enabled (do() enables and don't() disables)
 
+def parseForMulAndDo(s):
+    # Find each correct mul(X, Y) where X,Y are integers between 0 and 999
+    extentedPattern = r"mul\((\d+),(\d+)\)|(do\(\)|don't\(\))"
+    matches = re.findall(extentedPattern, s)
+    return matches
+
+def countEnabledMuls(l):
+    # Count the sum of the enabled Mul in l
+    res = 0
+    enabled = True
+    for x, y, do in parseForMulAndDo(l):
+        if do:
+            enabled = (do == "do()")
+        elif enabled:
+            res += int(x)*int(y)
+
+    return res
+
+print(countEnabledMuls(content))
+# Solution for my input : 90669332
