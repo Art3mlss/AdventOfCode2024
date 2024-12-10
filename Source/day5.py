@@ -5,7 +5,6 @@
 # @Project: Advent of Code 2024
 # @Link : https://adventofcode.com/2024/day/5
 ## ---------------------------
-from ctypes import c_int
 
 ## ----- Accessing Input File
 path = "../Resources/"
@@ -36,7 +35,7 @@ def isCorrectUpdate(update):
         if not correct:
             break
         if elem not in rulesDict.keys():
-            continue
+            continue 
         else:
             for rule in rulesDict[elem]:
                 if rule in update[0:i]:
@@ -55,7 +54,7 @@ print(sumCorrectUpdates)
 
 def correctUpdate(update):
     # Correct an incorrect update
-    while(not isCorrectUpdate(update)):
+    while not isCorrectUpdate(update):
         for i, elem in enumerate(update):
             if elem not in rulesDict.keys():
                 continue
@@ -67,7 +66,7 @@ def correctUpdate(update):
                         break
     return update
 
-
+# Sum the middle value of each corrected incorrect update
 correctedUpdateSum = 0
 for i in range(len(updates)):
     if i in correctUpdates:
@@ -77,3 +76,4 @@ for i in range(len(updates)):
         correctedUpdateSum += correctedUpdate[int(len(correctedUpdate)/2)]
 
 print(correctedUpdateSum)
+# Solution for my input : 4681
