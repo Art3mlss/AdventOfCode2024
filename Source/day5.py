@@ -5,6 +5,7 @@
 # @Project: Advent of Code 2024
 # @Link : https://adventofcode.com/2024/day/5
 ## ---------------------------
+from ctypes import c_int
 
 ## ----- Accessing Input File
 path = "../Resources/"
@@ -50,3 +51,29 @@ print(sumCorrectUpdates)
 
 # Solution for my input : 5091
 ## ----- Part #2
+# Correct each incorrect update
+
+def correctUpdate(update):
+    # Correct an incorrect update
+    while(not isCorrectUpdate(update)):
+        for i, elem in enumerate(update):
+            if elem not in rulesDict.keys():
+                continue
+            else:
+                for rule in rulesDict[elem]:
+                    if rule in update[0:i]:
+                        j = update.index(rule)
+                        update[i], update[j] = update[j], update[i]
+                        break
+    return update
+
+
+correctedUpdateSum = 0
+for i in range(len(updates)):
+    if i in correctUpdates:
+        continue
+    else:
+        correctedUpdate = correctUpdate(updates[i])
+        correctedUpdateSum += correctedUpdate[int(len(correctedUpdate)/2)]
+
+print(correctedUpdateSum)
