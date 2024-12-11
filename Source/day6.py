@@ -5,7 +5,6 @@
 # @Project: Advent of Code 2024
 # @Link : https://adventofcode.com/2024/day/6
 ## ---------------------------
-from wheel.metadata import yield_lines
 
 ## ----- Accessing Input File
 path = "../Resources/"
