@@ -59,3 +59,40 @@ print("Execution time : ", time.time()-start)
 
 ## ----- Part #2
 # Same question as before but with an additionnal || operator (concatenation)
+
+op = ['+', '*', '||']
+
+
+def isTargetAchievable2(n, operands):
+    # Find whether it is possible to get the number n with the operands and a specific combination of operations
+
+    combinations = allPossibleCombinations(op, len(operands)-1)
+    for combination in combinations: # combination = ['+', '*'] // operands = ['1', '2', '3']
+        value = operands[0]
+        i = 0
+        while i<len(combination):
+            if combination[i] == '+':
+                value += operands[i+1]
+            elif combination[i] == '*':
+                value *= operands[i+1]
+            else:
+                value = int(str(value) + str(operands[i+1]))
+            i += 1
+
+        if value == n:
+            return True
+
+    return False
+
+# Count the sum of each number that is possible to get with the operands
+start = time.time() # For performance measurement
+res = 0
+for line in content.split('\n'):
+    val, operands = line.split(': ')
+    if isTargetAchievable2(int(val), list(map(int, operands.split(' ')))):
+        res += int(val)
+
+print(res)
+print("Execution time : ", time.time()-start)
+# Solution for my input : 354060705047464
+# Ran in 56.3s on my laptop. Bruteforce, but it works! (i don't have a better idea for now)
