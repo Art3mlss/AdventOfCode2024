@@ -20,7 +20,7 @@ import time
 
 start = time.time()
 
-grid = [list(e) for e in content.split("\n")]
+grid = [['-9' if x =='.' else x for x in e] for e in content.split("\n")]
 zeros = [(i, j) for i in range(len(grid)) for j in range(len(grid[0])) if grid[i][j] == '0']
 
 totalScore = 0
@@ -57,3 +57,41 @@ print(totalScore)
 print(f"Execution time: {time.time()-start:.4f} s")
 # Solution for my input : 717
 # Ran in 0.034s on my laptop
+
+## ----- Part #2
+# Same idea, but find the number of distinct path from each 0
+
+def findPaths(grid, startX, startY, visited):
+   # Recursively count the number of paths from the current position to a 9.
+
+    current_value = int(grid[startX][startY])
+
+    # If we reach a 9, count this as a valid path
+    if current_value == 9:
+        return 1
+
+    # Mark this cell as visited
+    visited.add((startX, startY))
+
+    # Explore all valid moves
+    totalPaths = 0
+    for dx, dy in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
+        i, j = startX + dx, startY + dy
+        if 0 <= i < len(grid) and 0 <= j < len(grid[0]) and (i, j) not in visited:
+            if int(grid[i][j]) == current_value + 1:
+                totalPaths += findPaths(grid, i, j, visited)
+
+    # Unmark this cell as visited before returning (backtrack)
+    visited.remove((startX, startY))
+
+    return totalPaths
+
+totalPaths = 0
+
+for start_x, start_y in zeros:
+    totalPaths += findPaths(grid, start_x, start_y, set())
+
+print(totalPaths)
+print(f"Execution time: {time.time()-start:.4f} s")
+# Solution for my input : 1686
+# Ran in 0.049s on my laptop
